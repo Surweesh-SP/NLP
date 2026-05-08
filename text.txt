@@ -1,0 +1,156 @@
+
+resume code in bash:::
+    RESUME_CKPT=checkpoints/<your_run_id>/latest.pt \
+    python model.py
+
+
+
+(venv) 
+Student@DESKTOP-5F4HIEQ MINGW64 /f/parameter-golf (main)
+$ RESUME_CKPT=checkpoints/run_1774425323/latest.pt \
+> DATA_PATH=./data/datasets/fineweb10B_sp1024/ \
+> TOKENIZER_PATH=./data/tokenizers/fineweb_1024_bpe.model \
+> NUM_RECUR_STEPS=8 \
+> MAX_SEQS=16 \
+> USE_QAT=0 \
+> VAL_LOSS_EVERY=400 \
+> ITERATIONS=4000 \
+> python model.py
+2-4d61-4316-a3f2-87788ae622a3Device : NVIDIA GeForce RTX 3090
+
+step:  801/4000 loss:3.6708 lr:1.000 mem:0.20GB qat:False t:0s
+step:  900/4000 loss:3.6722 lr:1.000 mem:0.20GB qat:False t:28s
+step: 1000/4000 loss:3.6977 lr:1.000 mem:0.20GB qat:False t:54s
+Checkpoint saved at step 1000
+step: 1100/4000 loss:3.4393 lr:1.000 mem:0.20GB qat:False t:82s
+step: 1200/4000 loss:3.6000 lr:1.000 mem:0.20GB qat:False t:109s
+Checkpoint saved at step 1200
+  >> val_loss:3.6557 val_bpb:2.1651
+  >> New BEST bpb=2.1651 at step 1200, checkpoint saved
+step: 1300/4000 loss:3.5080 lr:1.000 mem:0.20GB qat:False t:4786s
+step: 1400/4000 loss:3.4739 lr:1.000 mem:0.20GB qat:False t:4813s
+Checkpoint saved at step 1400
+step: 1500/4000 loss:3.3473 lr:1.000 mem:0.20GB qat:False t:4840s
+step: 1600/4000 loss:3.5813 lr:1.000 mem:0.20GB qat:False t:4867s
+Checkpoint saved at step 1600
+  >> val_loss:3.6017 val_bpb:2.1332  [SWA]
+  >> New BEST bpb=2.1332 at step 1600, checkpoint saved
+step: 1700/4000 loss:3.4864 lr:1.000 mem:0.23GB qat:False t:9398s
+step: 1800/4000 loss:3.6333 lr:1.000 mem:0.23GB qat:False t:9424s
+Checkpoint saved at step 1800
+step: 1900/4000 loss:3.5757 lr:1.000 mem:0.23GB qat:False t:9450s
+step: 2000/4000 loss:3.4485 lr:1.000 mem:0.23GB qat:False t:9476s
+Checkpoint saved at step 2000
+  >> val_loss:3.3983 val_bpb:2.0127  [SWA]
+  >> New BEST bpb=2.0127 at step 2000, checkpoint saved
+step: 2100/4000 loss:3.2908 lr:1.000 mem:0.23GB qat:False t:14128s
+step: 2200/4000 loss:3.1432 lr:1.000 mem:0.23GB qat:False t:14155s
+Checkpoint saved at step 2200
+step: 2300/4000 loss:3.4572 lr:1.000 mem:0.23GB qat:False t:14182s
+step: 2400/4000 loss:3.4758 lr:1.000 mem:0.23GB qat:False t:14209s
+Checkpoint saved at step 2400
+  >> val_loss:3.3872 val_bpb:2.0061  [SWA]
+  >> New BEST bpb=2.0061 at step 2400, checkpoint saved
+step: 2500/4000 loss:3.4960 lr:1.000 mem:0.23GB qat:False t:18897s
+Checkpoint saved at step 2400
+  >> val_loss:3.3872 val_bpb:2.0061  [SWA]
+  >> New BEST bpb=2.0061 at step 2400, checkpoint saved
+step: 2500/4000 loss:3.4960 lr:1.000 mem:0.23GB qat:False t:18897s
+  >> val_loss:3.3872 val_bpb:2.0061  [SWA]
+  >> New BEST bpb=2.0061 at step 2400, checkpoint saved
+step: 2500/4000 loss:3.4960 lr:1.000 mem:0.23GB qat:False t:18897s
+  >> New BEST bpb=2.0061 at step 2400, checkpoint saved
+step: 2500/4000 loss:3.4960 lr:1.000 mem:0.23GB qat:False t:18897s
+step: 2500/4000 loss:3.4960 lr:1.000 mem:0.23GB qat:False t:18897s
+step: 2600/4000 loss:3.6403 lr:1.000 mem:0.23GB qat:False t:18924s
+Checkpoint saved at step 2600
+Checkpoint saved at step 2600
+step: 2700/4000 loss:3.4633 lr:1.000 mem:0.23GB qat:False t:18951s
+step: 2800/4000 loss:3.3960 lr:1.000 mem:0.23GB qat:False t:18978s
+Checkpoint saved at step 2800
+  >> val_loss:3.3805 val_bpb:2.0021  [SWA]
+  >> New BEST bpb=2.0021 at step 2800, checkpoint saved
+step: 2900/4000 loss:3.3506 lr:1.000 mem:0.23GB qat:False t:23491s
+step: 3000/4000 loss:3.7263 lr:1.000 mem:0.23GB qat:False t:23518s
+Checkpoint saved at step 3000
+step: 3100/4000 loss:3.3539 lr:1.000 mem:0.23GB qat:False t:23545s
+step: 3200/4000 loss:3.4268 lr:1.000 mem:0.23GB qat:False t:23572s
+Checkpoint saved at step 3200
+  >> val_loss:3.3794 val_bpb:2.0015  [SWA]
+  >> New BEST bpb=2.0015 at step 3200, checkpoint saved
+step: 3300/4000 loss:3.4600 lr:1.000 mem:0.23GB qat:False t:28279s
+step: 3400/4000 loss:3.4895 lr:1.000 mem:0.23GB qat:False t:28306s
+Checkpoint saved at step 3400
+step: 3500/4000 loss:3.6028 lr:0.833 mem:0.23GB qat:False t:28333s
+step: 3600/4000 loss:3.3561 lr:0.667 mem:0.23GB qat:False t:28360s
+Checkpoint saved at step 3600
+  >> val_loss:3.3782 val_bpb:2.0007  [SWA]
+  >> New BEST bpb=2.0007 at step 3600, checkpoint saved
+step: 3700/4000 loss:3.1457 lr:0.500 mem:0.23GB qat:False t:33019s
+step: 3800/4000 loss:3.4246 lr:0.333 mem:0.23GB qat:False t:33046s
+Checkpoint saved at step 3800
+step: 3900/4000 loss:3.2722 lr:0.167 mem:0.23GB qat:False t:33074s
+step: 4000/4000 loss:3.6606 lr:0.000 mem:0.23GB qat:False t:33101s
+Checkpoint saved at step 4000
+  >> val_loss:3.3640 val_bpb:1.9923  [SWA]
+  >> New BEST bpb=1.9923 at step 4000, checkpoint saved
+
+SWA applied (121 snapshots averaged)
+
+============================================================
+FINAL  val_loss:3.3640  val_bpb:1.9923
+
+Artifact: 11.084 MB / 16.000 MB (headroom=4916KB)
+  code=44KB | weights_compressed=11.04MB | zstd-22
+
+
+
+class HP:
+    data_path      = os.environ.get("DATA_PATH",      "./data/datasets/fineweb10B_sp1024")
+    tokenizer_path = os.environ.get("TOKENIZER_PATH", "./data/tokenizers/fineweb_1024_bpe.model")
+    run_id         = os.environ.get("RUN_ID",         str(uuid.uuid4()))
+    seed           = int(os.environ.get("SEED",       "1337"))
+    vocab_size      = int(os.environ.get("VOCAB_SIZE",       "1024"))
+    bigram_size     = int(os.environ.get("BIGRAM_SIZE",      "10240"))  # proven best
+    model_dim       = int(os.environ.get("MODEL_DIM",        "512"))
+    num_heads       = int(os.environ.get("NUM_HEADS",        "8"))
+    num_kv_heads    = int(os.environ.get("NUM_KV_HEADS",     "4"))
+    mlp_mult        = int(os.environ.get("MLP_MULT",         "3"))      # 3x MLP
+    num_recur_steps = int(os.environ.get("NUM_RECUR_STEPS",  "12"))     # 14 passes
+    n_layer         = num_recur_steps
+    lora_rank       = int(os.environ.get("LORA_RANK",        "16"))     # rank-16 adapters
+    step_emb_dim    = int(os.environ.get("STEP_EMB_DIM",     "64"))
+    num_enc_steps   = int(os.environ.get("NUM_ENC_STEPS",    "7"))      # 7 enc / 7 dec
+    use_halt        = bool(int(os.environ.get("USE_HALT",    "0")))
+    halt_threshold  = float(os.environ.get("HALT_THRESHOLD", "0.9"))
+    rope_base       = float(os.environ.get("ROPE_BASE",      "500000"))
+    logit_softcap   = float(os.environ.get("LOGIT_SOFTCAP",  "30.0"))
+    qk_gain_init    = float(os.environ.get("QK_GAIN_INIT",   "1.5"))
+    use_smeargate   = bool(int(os.environ.get("USE_SMEARGATE", "1")))
+    seq_len         = int(os.environ.get("TRAIN_SEQ_LEN",     "1024"))
+    batch_tokens    = int(os.environ.get("TRAIN_BATCH_TOKENS","32768"))
+    iterations      = int(os.environ.get("ITERATIONS",        "4000"))
+    warmdown_iters  = int(os.environ.get("WARMDOWN_ITERS",    "600"))
+    warmup_steps    = int(os.environ.get("WARMUP_STEPS",      "100"))
+    val_every       = int(os.environ.get("VAL_LOSS_EVERY",    "400"))
+    val_stride      = int(os.environ.get("VAL_STRIDE",        "64"))
+    max_wallclock   = float(os.environ.get("MAX_WALLCLOCK_SECONDS", "0"))
+    grad_ckpt       = bool(int(os.environ.get("GRAD_CKPT",    "1")))
+    max_seqs        = int(os.environ.get("MAX_SEQS",          "6"))
+    ckpt_every      = int(os.environ.get("CKPT_EVERY",        "200"))  # steps
+    patience_evals  = int(os.environ.get("PATIENCE_EVALS",    "5"))    # evals w/o improvement
+    use_swa         = bool(int(os.environ.get("USE_SWA",      "1")))
+    swa_start_frac  = float(os.environ.get("SWA_START_FRAC",  "0.4"))
+    swa_every       = int(os.environ.get("SWA_EVERY",         "20"))
+    use_qat         = bool(int(os.environ.get("USE_QAT",      "1")))
+    qat_start_frac  = float(os.environ.get("QAT_START_FRAC",  "0.1"))
+    qat_bits_attn   = int(os.environ.get("QAT_BITS_ATTN",     "6"))
+    qat_bits_mlp    = int(os.environ.get("QAT_BITS_MLP",      "5"))
+    matrix_lr       = float(os.environ.get("MATRIX_LR",   "0.04"))
+    lora_lr         = float(os.environ.get("LORA_LR",     "0.06"))  # LoRA trains faster
+    embed_lr        = float(os.environ.get("EMBED_LR",    "0.05"))
+    scalar_lr       = float(os.environ.get("SCALAR_LR",   "0.04"))
+    muon_wd         = float(os.environ.get("MUON_WD",     "0.04"))
+    beta1           = float(os.environ.get("BETA1",       "0.9"))
+    beta2           = float(os.environ.get("BETA2",       "0.95"))
+    embed_init_std  = float(os.environ.get("EMBED_INIT_STD", "0.005"))

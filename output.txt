@@ -1,0 +1,88 @@
+Device : NVIDIA GeForce RTX 3090
+Compress: zstd-22
+
+Architecture: Recursive × 8 steps (layers=8)
+  Base block:   8.39M params (shared)
+  LoRA adapters:0.98M params (rank=16 × 8 steps × 6 matrices)
+  Step embeddings:33K params
+  TOTAL:        9.41M params
+  Config: dim=512 mlp=3x seq=512 bigram=10240
+  QAT: INT6/INT5 | SWA@40% | smear=True
+Resumed from checkpoints/run_1774425323/latest.pt at step 800
+
+Training 4000 steps | QAT@step 4001 | SWA@step 1600
+
+step:  801/4000 loss:3.6708 lr:1.000 mem:0.20GB qat:False t:0s
+step:  900/4000 loss:3.6722 lr:1.000 mem:0.20GB qat:False t:28s
+step: 1000/4000 loss:3.6977 lr:1.000 mem:0.20GB qat:False t:54s
+Checkpoint saved at step 1000
+step: 1100/4000 loss:3.4393 lr:1.000 mem:0.20GB qat:False t:82s
+step: 1200/4000 loss:3.6000 lr:1.000 mem:0.20GB qat:False t:109s
+Checkpoint saved at step 1200
+  >> val_loss:3.6557 val_bpb:2.1651
+  >> New BEST bpb=2.1651 at step 1200, checkpoint saved
+step: 1300/4000 loss:3.5080 lr:1.000 mem:0.20GB qat:False t:4786s
+step: 1400/4000 loss:3.4739 lr:1.000 mem:0.20GB qat:False t:4813s
+Checkpoint saved at step 1400
+step: 1500/4000 loss:3.3473 lr:1.000 mem:0.20GB qat:False t:4840s
+step: 1600/4000 loss:3.5813 lr:1.000 mem:0.20GB qat:False t:4867s
+Checkpoint saved at step 1600
+  >> val_loss:3.6017 val_bpb:2.1332  [SWA]
+  >> New BEST bpb=2.1332 at step 1600, checkpoint saved
+step: 1700/4000 loss:3.4864 lr:1.000 mem:0.23GB qat:False t:9398s
+step: 1800/4000 loss:3.6333 lr:1.000 mem:0.23GB qat:False t:9424s
+Checkpoint saved at step 1800
+step: 1900/4000 loss:3.5757 lr:1.000 mem:0.23GB qat:False t:9450s
+step: 2000/4000 loss:3.4485 lr:1.000 mem:0.23GB qat:False t:9476s
+Checkpoint saved at step 2000
+  >> val_loss:3.3983 val_bpb:2.0127  [SWA]
+  >> New BEST bpb=2.0127 at step 2000, checkpoint saved
+step: 2100/4000 loss:3.2908 lr:1.000 mem:0.23GB qat:False t:14128s
+step: 2200/4000 loss:3.1432 lr:1.000 mem:0.23GB qat:False t:14155s
+Checkpoint saved at step 2200
+step: 2300/4000 loss:3.4572 lr:1.000 mem:0.23GB qat:False t:14182s
+step: 2400/4000 loss:3.4758 lr:1.000 mem:0.23GB qat:False t:14209s
+Checkpoint saved at step 2400
+  >> val_loss:3.3872 val_bpb:2.0061  [SWA]
+  >> New BEST bpb=2.0061 at step 2400, checkpoint saved
+step: 2500/4000 loss:3.4960 lr:1.000 mem:0.23GB qat:False t:18897s
+step: 2600/4000 loss:3.6403 lr:1.000 mem:0.23GB qat:False t:18924s
+Checkpoint saved at step 2600
+step: 2700/4000 loss:3.4633 lr:1.000 mem:0.23GB qat:False t:18951s
+step: 2800/4000 loss:3.3960 lr:1.000 mem:0.23GB qat:False t:18978s
+Checkpoint saved at step 2800
+  >> val_loss:3.3805 val_bpb:2.0021  [SWA]
+  >> New BEST bpb=2.0021 at step 2800, checkpoint saved
+step: 2900/4000 loss:3.3506 lr:1.000 mem:0.23GB qat:False t:23491s
+step: 3000/4000 loss:3.7263 lr:1.000 mem:0.23GB qat:False t:23518s
+Checkpoint saved at step 3000
+step: 3100/4000 loss:3.3539 lr:1.000 mem:0.23GB qat:False t:23545s
+step: 3200/4000 loss:3.4268 lr:1.000 mem:0.23GB qat:False t:23572s
+Checkpoint saved at step 3200
+  >> val_loss:3.3794 val_bpb:2.0015  [SWA]
+  >> New BEST bpb=2.0015 at step 3200, checkpoint saved
+step: 3300/4000 loss:3.4600 lr:1.000 mem:0.23GB qat:False t:28279s
+step: 3400/4000 loss:3.4895 lr:1.000 mem:0.23GB qat:False t:28306s
+Checkpoint saved at step 3400
+step: 3500/4000 loss:3.6028 lr:0.833 mem:0.23GB qat:False t:28333s
+step: 3600/4000 loss:3.3561 lr:0.667 mem:0.23GB qat:False t:28360s
+Checkpoint saved at step 3600
+  >> val_loss:3.3782 val_bpb:2.0007  [SWA]
+  >> New BEST bpb=2.0007 at step 3600, checkpoint saved
+step: 3700/4000 loss:3.1457 lr:0.500 mem:0.23GB qat:False t:33019s
+step: 3800/4000 loss:3.4246 lr:0.333 mem:0.23GB qat:False t:33046s
+Checkpoint saved at step 3800
+step: 3900/4000 loss:3.2722 lr:0.167 mem:0.23GB qat:False t:33074s
+step: 4000/4000 loss:3.6606 lr:0.000 mem:0.23GB qat:False t:33101s
+Checkpoint saved at step 4000
+  >> val_loss:3.3640 val_bpb:1.9923  [SWA]
+  >> New BEST bpb=1.9923 at step 4000, checkpoint saved
+
+SWA applied (121 snapshots averaged)
+
+============================================================
+FINAL  val_loss:3.3640  val_bpb:1.9923
+
+Artifact: 11.084 MB / 16.000 MB (headroom=4916KB)
+  code=44KB | weights_compressed=11.04MB | zstd-22
+============================================================
